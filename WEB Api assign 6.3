@@ -1,0 +1,216 @@
+{
+ "cells": [
+  {
+   "cell_type": "raw",
+   "id": "4034ec73-a378-458f-b56e-5ea9ede5871e",
+   "metadata": {},
+   "source": [
+    "Q1- what is an API? give an example, where an api is used in real life"
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "id": "78fbf069-9332-4a51-94d9-6c9beb032940",
+   "metadata": {},
+   "source": [
+    "API stands for \"Application Programming Interface.\" It is a set of rules and protocols that allows different software applications to communicate and interact with each other. APIs define the methods and data formats that applications can use to request and exchange information. They are essential for enabling the integration of various services, systems, and platforms.\n",
+    "\n",
+    "A real-life example of API usage is when you use a weather app on your smartphone. The weather app doesn't generate its weather data; instead, it fetches that information from a remote server. The server exposes a weather API that provides weather data to any application that requests it.\n",
+    "\n",
+    "Here's a simplified breakdown of how the API works in this scenario:\n",
+    "\n",
+    "Weather API: This is the server-side application that collects weather data from various sources and processes it. It also defines how clients can request weather information.\n",
+    "\n",
+    "Weather App (Client): This is the application you use on your smartphone to check the weather. It acts as the client that sends requests to the Weather API to get the weather data.\n",
+    "\n",
+    "API Request: The weather app sends a request to the Weather API, specifying the location for which it wants the weather data (e.g., city name, coordinates).\n",
+    "\n",
+    "API Response: The Weather API receives the request, processes it, and sends back the relevant weather data in a specified data format, such as JSON or XML.\n",
+    "\n",
+    "Weather App Display: The weather app receives the API response, extracts the relevant information, and displays the current weather conditions and forecast for the specified location.\n",
+    "\n",
+    "In this example, the Weather API acts as an intermediary that allows the weather app to access weather data without having to know the specifics of where the data comes from or how it is generated. This separation of concerns makes it easier to develop applications and enables developers to leverage existing services and data without reinventing the wheel."
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "id": "503265d1-a9be-45a8-9908-9013c7bce922",
+   "metadata": {},
+   "source": [
+    "Q2- give advantage and disadvantage of using API."
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "id": "5dd4b119-f581-46f5-ac66-77b386b3828b",
+   "metadata": {},
+   "source": [
+    "Advantages of using API:\n",
+    "\n",
+    "Interoperability: APIs enable different software systems to interact and work together. They allow developers to integrate and leverage functionalities from other applications, services, or platforms, fostering interoperability.\n",
+    "\n",
+    "Reusability: APIs promote code reusability. Instead of building functionalities from scratch, developers can use existing APIs to access ready-made services, saving time and effort.\n",
+    "\n",
+    "Scalability: APIs allow applications to scale easily. Developers can use external APIs to offload certain tasks to specialized services, ensuring that their own application can handle increased user demand.\n",
+    "\n",
+    "Faster Development: By using APIs, developers can accelerate development cycles. They can focus on building the core features of their application while relying on APIs to handle auxiliary functions.\n",
+    "\n",
+    "Ecosystem Integration: APIs facilitate the creation of an ecosystem of interconnected applications. This leads to the development of richer, more comprehensive software platforms.\n",
+    "\n",
+    "Disadvantages of using API:\n",
+    "\n",
+    "Dependency on External Services: When an application relies heavily on external APIs, it becomes dependent on the availability and reliability of those services. If the API experiences downtime or changes its functionality, it can affect the performance and stability of the application using it.\n",
+    "\n",
+    "Security Risks: Using third-party APIs can introduce security risks. If the API is not properly secured, it may expose sensitive data or allow unauthorized access to certain functionalities.\n",
+    "\n",
+    "Versioning and Compatibility: APIs can evolve and change over time. When a new version of an API is released, it might not be backward compatible, leading to potential issues for applications that depend on the older version.\n",
+    "\n",
+    "Performance Impact: If an API response is slow or the API itself has performance issues, it can negatively impact the responsiveness of the application that relies on it.\n",
+    "\n",
+    "Costs: While some APIs are free to use, others come with usage-based pricing models or require subscriptions. Depending on the level of usage and functionality needed, these costs can add up for the developers or businesses utilizing the APIs.\n",
+    "\n",
+    "Overhead and Complexity: Implementing and managing multiple APIs can introduce overhead and complexity in an application, especially when dealing with APIs from different providers with varying conventions and formats.\n",
+    "\n",
+    "To mitigate some of the disadvantages, developers should carefully choose reliable and well-documented APIs, implement proper error handling, and stay informed about updates or changes to the APIs they use. Additionally, having contingency plans in place for cases where APIs become unavailable can help maintain the stability of the application.\n",
+    "\n",
+    "\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "id": "aa1f69cb-43ec-40d0-9fe4-160e9e80e88a",
+   "metadata": {},
+   "source": [
+    "Q3-What is an web API?Differentiate between API and web API."
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "id": "a5f184e9-5171-4b74-86f8-df59e6e85f2b",
+   "metadata": {},
+   "source": [
+    " Web API, also known as a Web Service API, is an Application Programming Interface (API) that allows communication and interaction between different software systems over the internet. It enables web servers to provide data and functionalities that can be accessed and utilized by client applications, typically using HTTP (Hypertext Transfer Protocol) as the communication protocol.\n",
+    "\n",
+    "Differentiating between API and Web API:\n",
+    "\n",
+    "Scope of Interaction:\n",
+    "\n",
+    "API: API (Application Programming Interface) is a general term used to describe any set of rules and protocols that allow software applications to communicate with each other. APIs can be used for various purposes, not limited to web-based interactions.\n",
+    "Web API: Web API is a specific type of API that is designed to be accessed over the internet using standard web protocols, such as HTTP. It focuses on enabling communication between web-based applications, services, or platforms.\n",
+    "Transport Protocol:\n",
+    "\n",
+    "API: APIs can use various transport protocols, such as HTTP, TCP, UDP, or others, depending on the nature of the communication and the underlying technologies.\n",
+    "Web API: Web APIs primarily use the HTTP protocol, and they often follow REST (Representational State Transfer) principles, which leverage standard HTTP methods (GET, POST, PUT, DELETE) and status codes for communication.\n",
+    "Use Case:\n",
+    "\n",
+    "API: APIs can be used for a wide range of purposes, including communication between different parts of a single application, integration of third-party services, accessing hardware functionalities, and more.\n",
+    "Web API: Web APIs are specifically designed for interconnecting web-based applications, services, or platforms. They are commonly used to expose data and functionalities over the internet, allowing other applications to access and consume them.\n",
+    "Access Medium:\n",
+    "\n",
+    "API: APIs can be accessed through various channels, including local function calls, libraries, or remote network calls, depending on how they are designed and implemented.\n",
+    "Web API: Web APIs are accessed over the internet using standard HTTP requests and responses. Clients, such as web browsers or mobile apps, make HTTP calls to the API endpoints to interact with the web service.\n",
+    "Location of Implementation:\n",
+    "\n",
+    "API: APIs can be implemented in various environments, including on a local machine, within a server, or as a cloud service, depending on the application's architecture and requirements.\n",
+    "Web API: Web APIs are typically hosted on web servers and made available to clients through specific URLs (endpoints) accessible via the internet.\n",
+    "In summary, while an API is a broad term referring to any set of rules that allows software systems to interact, a Web API specifically focuses on facilitating communication and data exchange between web-based applications and services using standard web protocols like HTTP."
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "id": "c0a17447-cd43-4946-a13a-ab7ce3cacae9",
+   "metadata": {},
+   "source": [
+    "Q4-explain REST AND soap architecture.mention shortcoming of SOAP"
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "id": "4beb7b19-01a2-4cc0-aee3-615225fefd8b",
+   "metadata": {},
+   "source": [
+    "REST (Representational State Transfer) and SOAP (Simple Object Access Protocol) are two different architectural styles for designing web services. Both REST and SOAP are used for web-based communication and data exchange between different software systems, but they have different principles and characteristics.\n",
+    "\n",
+    "REST (Representational State Transfer):\n",
+    "\n",
+    "REST is an architectural style that emphasizes simplicity, scalability, and statelessness.\n",
+    "It operates over standard HTTP methods such as GET, POST, PUT, and DELETE, using the URI (Uniform Resource Identifier) to identify and interact with resources.\n",
+    "RESTful APIs use standard HTTP status codes to indicate the result of a request (e.g., 200 for success, 404 for not found).\n",
+    "It follows a stateless model, meaning each request from a client to the server must contain all the information needed to understand and process the request, without relying on any previous interactions.\n",
+    "RESTful APIs often return data in common formats like JSON or XML.\n",
+    "SOAP (Simple Object Access Protocol):\n",
+    "\n",
+    "SOAP is a protocol-based standard for designing web services that use XML to define the message format for communication.\n",
+    "It operates over various transport protocols, including HTTP, SMTP, and others, making it more flexible in terms of communication channels.\n",
+    "SOAP messages are defined by a specific XML schema, which includes the request and response structure, and may be complex due to additional metadata.\n",
+    "SOAP provides built-in error handling and security features, making it suitable for more robust and secure enterprise applications.\n",
+    "It follows a stateful model, meaning it can maintain session information between client and server interactions.\n",
+    "Shortcomings of SOAP:\n",
+    "\n",
+    "Complexity: SOAP messages can be verbose and complex due to the use of XML and additional metadata. This can make it more challenging to work with and understand, especially for developers.\n",
+    "\n",
+    "Performance Overhead: Due to the XML format and additional processing required for parsing and validation, SOAP messages can be heavier in terms of data size and processing time compared to more lightweight formats like JSON used in REST.\n",
+    "\n",
+    "Limited Support for Platforms: While SOAP is more flexible in terms of transport protocols, it may not be as widely supported by different platforms and programming languages as REST, which is primarily based on HTTP.\n",
+    "\n",
+    "Lack of Human-Readability: SOAP messages are not human-readable like JSON, which can make debugging and troubleshooting more challenging.\n",
+    "\n",
+    "Limited Caching: SOAP services are not inherently cacheable, which can impact performance and increase the load on the server for frequently requested data.\n",
+    "\n",
+    "Tightly Coupled: SOAP can lead to tight coupling between the client and server, making it less flexible for evolving or changing the application's architecture.\n",
+    "\n",
+    "Overkill for Simple Use Cases: SOAP's robustness and complexity may be excessive for simple web services, leading to unnecessary overhead for smaller projects.\n",
+    "\n",
+    "In contrast, REST's simplicity, scalability, and statelessness have made it more popular and widely adopted for web services, especially for public APIs and web-based applications. However, SOAP still finds its use in certain enterprise scenarios where more robust security and error handling features are required."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "d097b4e1-751f-4cba-a380-d5550a91d66d",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "SyntaxError",
+     "evalue": "invalid syntax (891705480.py, line 1)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;36m  Cell \u001b[0;32mIn[2], line 1\u001b[0;36m\u001b[0m\n\u001b[0;31m    Q5- DIFFEREMCE BETWEEN REST and SOAP.\u001b[0m\n\u001b[0m                   ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
+     ]
+    }
+   ],
+   "source": [
+    "Q5- DIFFEREMCE BETWEEN REST and SOAP."
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "id": "7a307f70-2388-4313-9564-f20f25b8abd7",
+   "metadata": {},
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
